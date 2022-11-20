@@ -1,6 +1,6 @@
 package co.edureka.util;
 
-public class Book extends java.lang.Object {
+public class Book  {
 	private int bookId;
 	private String bookName;
 	
