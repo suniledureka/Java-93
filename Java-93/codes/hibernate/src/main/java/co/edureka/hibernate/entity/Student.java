@@ -12,6 +12,13 @@ public class Student {
 		this.studentName = studentName;
 		this.studentEmail = studentEmail;
 	}
+	
+	public Student(Integer studentId, String studentName, String studentEmail) {
+		super();
+		this.studentId = studentId;
+		this.studentName = studentName;
+		this.studentEmail = studentEmail;
+	}
 
 	public Integer getStudentId() {
 		return studentId;
@@ -37,4 +44,11 @@ public class Student {
 		this.studentEmail = studentEmail;
 	}
 
+	@Override
+	public String toString() {
+		String student = String.format("Student[%-3d | %-14s | %-20s]", studentId, studentName, studentEmail);
+		return student;
+	}
+	
+	
 }
